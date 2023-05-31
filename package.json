@@ -1,0 +1,5 @@
+{
+    "name": "defold-emath",
+    "version": "1.0.0",
+    "types": "./@types/defold-emath.d.ts"
+}
