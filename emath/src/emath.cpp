@@ -28,11 +28,8 @@ static const luaL_Reg emath_functions[] = {
 
 static void LuaInit(lua_State* L) {
     int top = lua_gettop(L);
-
-    luaL_newlib(L, emath_functions);
-    lua_setglobal(L, "emath");
-
-    lua_settop(L, top);
+    luaL_register(L, "emath", emath_functions);
+    lua_pop(L, 1);
 }
 
 static dmExtension::Result InitializeMyExtension(dmExtension::Params* params) {
