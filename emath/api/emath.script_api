@@ -1,0 +1,26 @@
+- name: emath
+  type: table
+  desc: Extended math native extension
+  members:
+	- name: clamp
+    type: function
+    desc: "Ensures the \"input\" number is not less than \"lower\", or larger than \"upper\""
+		parameters:
+    - name: input
+      type: number
+    - name: lower
+      type: number
+    - name: upper
+      type: number
+    returns:
+    - name: clamped
+      type: number
+  - name: round
+    type: function
+    desc: "Rounds the \"input\" number to the nearest integer"
+    parameters:
+    - name: input
+      type: number
+    returns:
+    - name: rounded
+      type: number
