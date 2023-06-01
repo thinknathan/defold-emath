@@ -1,10 +1,13 @@
 # defold-emath
-Defold math extension with utility functions
+Defold math extension with clamp and round utility functions.
+
+You may prefer [DefMath](https://github.com/subsoap/defmath) for a most robust implementation.
 
 ## Installation
 
 - Edit game.project
-- Add dependency `https://github.com/thinknathan/defold-emath/archive/main.zip`
+- Add dependency `https://github.com/thinknathan/defold-emath/archive/main.zip` for the current version
+- Or add a specific [release](https://github.com/thinknathan/defold-emath/releases)
 
 ## Usage
 
