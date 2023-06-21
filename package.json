@@ -3,5 +3,5 @@
     "version": "1.0.0",
     "description": "Types for Defold math extension with clamp and round utility functions",
     "license": "CC0-1.0",
-    "types": "./@types/defold-emath.d.ts"
+    "types": "./@types/emath.d.ts"
 }
