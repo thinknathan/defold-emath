@@ -14,9 +14,9 @@ You may prefer [DefMath](https://github.com/subsoap/defmath) for a most robust i
 1. Install these types
 
 ```bash
-yarn add git+https://git@github.com/thinknathan/defold-emath.git#^1.0.0 -D
+yarn add git+https://git@github.com/thinknathan/defold-emath.git#^2.0.0 -D
 # or
-npm install git+https://git@github.com/thinknathan/defold-emath.git#^1.0.0 --save-dev
+npm install git+https://git@github.com/thinknathan/defold-emath.git#^2.0.0 --save-dev
 ```
 
 2. Add `defold-emath` to `types` in `tsconfig.json`
