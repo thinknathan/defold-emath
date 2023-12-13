@@ -24,3 +24,59 @@
     returns:
     - name: rounded
       type: number
+  - name: sign
+    desc: "Returns the sign of a number (1 for positive, -1 for negative, 0 for zero)."
+    parameters:
+    - name: number
+      type: number
+    return:
+    - name: result
+      type: number
+  - name: deg_to_rad
+    desc: "Converts degrees to radians."
+    parameters:
+    - name: degrees
+      type: number
+    return:
+    - name: result
+      type: number
+  - name: rad_to_deg
+    desc: "Converts radians to degrees."
+    parameters:
+    - name: radians
+      type: number
+    return:
+    - name: result
+      type: number
+  - name: distance2d
+    desc: "Calculates the distance between two points in 2D space."
+    parameters:
+    - name: x1
+      type: number
+    - name: y1
+      type: number
+    - name: x2
+      type: number
+    - name: y2
+      type: number
+    return:
+    - name: result
+      type: number
+  - name: distance3d
+    desc: "Calculates the distance between two points in 3D space."
+    parameters:
+    - name: x1
+      type: number
+    - name: y1
+      type: number
+    - name: z1
+      type: number
+    - name: x2
+      type: number
+    - name: y2
+      type: number
+    - name: z2
+      type: number
+    return:
+    - name: result
+      type: number

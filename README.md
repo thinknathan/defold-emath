@@ -14,9 +14,9 @@ You may prefer [DefMath](https://github.com/subsoap/defmath) for a most robust i
 1. Install these types
 
 ```bash
-yarn add git+https://git@github.com/thinknathan/defold-emath.git#^1.0.0 -D
+yarn add git+https://git@github.com/thinknathan/defold-emath.git#^2.0.0 -D
 # or
-npm install git+https://git@github.com/thinknathan/defold-emath.git#^1.0.0 --save-dev
+npm install git+https://git@github.com/thinknathan/defold-emath.git#^2.0.0 --save-dev
 ```
 
 2. Add `defold-emath` to `types` in `tsconfig.json`
@@ -48,18 +48,33 @@ npm install git+https://git@github.com/thinknathan/defold-emath.git#^1.0.0 --sav
 ```lua
 -- main.script
 function init(self)
-    local number = 15
-    local lower = 10
-    local upper = 20
+    -- 1. Clamp a value: (number, lower bound, upper bound)
+    local clampedValue = emath.clamp(25, 10, 20)
+    print(clampedValue)  -- Output: 20
 
-    -- Ensures the given number is not less than lower or larger than upper
-    local result = emath.clamp(number, lower, upper)
-    print(result)  -- Output: 15
+    -- 2. Round a number:
+    local roundedValue = emath.round(15.75)
+    print(roundedValue)  -- Output: 16
 
-    local number2 = 3.7
-    -- Rounds number to the nearest integer
-    local rounded = emath.round(number2)
-    print(rounded)  -- Output: 4
+    -- 3. Get the sign of a number:
+    local signValue = emath.sign(-7)
+    print(signValue)  -- Output: -1
+
+    -- 4. Convert degrees to radians:
+    local radians = emath.deg_to_rad(90)
+    print(radians)  -- Output: 1.5708 (approximately)
+
+    -- 5. Convert radians to degrees:
+    local degrees = emath.rad_to_deg(3.14159)
+    print(degrees)  -- Output: 180
+
+    -- 6. Calculate 2D distance:
+    local distance = emath.distance2d(0, 0, 3, 4)
+    print(distance)  -- Output: 5
+
+    -- 7. Calculate 3D distance:
+    local distance = emath.distance3d(0, 0, 0, 3, 4, 5)
+    print(distance)  -- Output: 7.0711 (approximately)
 end
 ```
 
