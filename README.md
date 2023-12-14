@@ -1,5 +1,6 @@
 # defold-emath
-Defold math extension with clamp and round utility functions.
+
+Defold native extension with math utility functions including clamp, round, sign, radian and degree conversion, measure 2d and 3d distances. 
 
 You may prefer [DefMath](https://github.com/subsoap/defmath) for a most robust implementation.
 
