@@ -4,35 +4,39 @@
 /** @noSelfInFile */
 
 /**
- * Extended math native extension
+ * Defold native extension with math functions for use in Lua scripts.
  * @noResolution
  */
 declare namespace emath {
 	/**
-	 * Returns the sign of a number (1 for positive, -1 for negative, 0 for zero).
-	 * @param number
+	 * Returns the sign of a number (-1 for negative, 1 for positive, 0 for zero).
+	 * @param input Number to check
 	 */
-	function sign(number: number): number;
+	function sign(input: number): number;
+
 	/**
 	 * Converts degrees to radians.
 	 * @param degrees
 	 */
 	function deg_to_rad(degrees: number): number;
+
 	/**
 	 * Converts radians to degrees.
 	 * @param radians
 	 */
 	function rad_to_deg(radians: number): number;
+
 	/**
-	 * Calculates the distance between two points in 2D space.
+	 * Calculates the 2D distance between two points.
 	 * @param x1
 	 * @param y1
 	 * @param x2
 	 * @param y2
 	 */
 	function distance2d(x1: number, y1: number, x2: number, y2: number): number;
+
 	/**
-	 * Calculates the distance between two points in 3D space.
+	 * Calculates the 3D distance between two points.
 	 * @param x1
 	 * @param y1
 	 * @param z1

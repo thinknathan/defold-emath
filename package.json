@@ -1,14 +1,16 @@
 {
 	"name": "@types/defold-emath",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Types for Defold math extension with clamp and round utility functions",
 	"license": "CC0-1.0",
-	"files": ["**/*.d.ts"],
-	"types": "./@types/emath-2.0.0.d.ts",
+	"files": [
+		"**/*.d.ts"
+	],
+	"types": "./@types/emath-2.0.1.d.ts",
 	"main": "./@types/emath",
 	"scripts": {
 		"check": "tsc --noEmit",
-		"prettier": "prettier \"./**.d.ts\" --write"
+		"prettier": "prettier \"./**/*.{eslintrc,yml,json,ts,md,d.ts}\" --write"
 	},
 	"devDependencies": {
 		"prettier": "^3.0.0",

@@ -1,20 +1,20 @@
 /** @noSelfInFile */
 
 /**
- * Extended math native extension
+ * Defold native extension with math functions for use in Lua scripts.
  * @noResolution
  */
 declare namespace emath {
 	/**
-	 * Ensures the `input` number is not less than `lower`, or larger than `upper`
-	 * @param input
-	 * @param lower
-	 * @param upper
+	 * Restricts a number to be within a specified range.
+	 * @param input Number to clamp
+	 * @param lower Lower bound
+	 * @param upper Upper bound
 	 */
 	export function clamp(input: number, lower: number, upper: number): number;
 	/**
-	 * Rounds the `input` number to the nearest integer
-	 * @param input
+	 * Rounds a number to the nearest integer.
+	 * @param input Number to round
 	 */
 	export function round(input: number): number;
 }

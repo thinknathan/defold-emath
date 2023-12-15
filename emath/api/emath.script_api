@@ -1,10 +1,10 @@
 - name: emath
   type: table
-  desc: Extended math native extension
+  desc: "Defold native extension with math functions for use in Lua scripts."
   members:
 	- name: clamp
     type: function
-    desc: "Ensures the \"input\" number is not less than \"lower\", or larger than \"upper\""
+    desc: "Restricts a number to be within a specified range."
 		parameters:
     - name: input
       type: number
@@ -17,7 +17,7 @@
       type: number
   - name: round
     type: function
-    desc: "Rounds the \"input\" number to the nearest integer"
+    desc: "Rounds a number to the nearest integer."
     parameters:
     - name: input
       type: number
@@ -25,7 +25,7 @@
     - name: rounded
       type: number
   - name: sign
-    desc: "Returns the sign of a number (1 for positive, -1 for negative, 0 for zero)."
+    desc: "Returns the sign of a number (-1 for negative, 1 for positive, 0 for zero)."
     parameters:
     - name: number
       type: number
@@ -49,7 +49,7 @@
     - name: result
       type: number
   - name: distance2d
-    desc: "Calculates the distance between two points in 2D space."
+    desc: "Calculates the 2D distance between two points."
     parameters:
     - name: x1
       type: number
@@ -63,7 +63,7 @@
     - name: result
       type: number
   - name: distance3d
-    desc: "Calculates the distance between two points in 3D space."
+    desc: "Calculates the 3D distance between two points."
     parameters:
     - name: x1
       type: number
