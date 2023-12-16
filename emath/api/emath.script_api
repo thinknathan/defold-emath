@@ -2,10 +2,10 @@
   type: table
   desc: "Defold native extension with math functions for use in Lua scripts."
   members:
-	- name: clamp
+  - name: clamp
     type: function
     desc: "Restricts a number to be within a specified range."
-		parameters:
+    parameters:
     - name: input
       type: number
     - name: lower
